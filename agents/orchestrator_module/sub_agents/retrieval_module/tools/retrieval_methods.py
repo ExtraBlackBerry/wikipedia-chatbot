@@ -1,6 +1,6 @@
 import sqlite3,sys, re
 from pathlib import Path
-sys.path.append(str(Path(__file__).parent.parent.parent.parent))
+sys.path.append(str(Path(__file__).parent.parent.parent.parent.parent))
 from tools.helpers import serialize
 from tools.embedding import embed_batch
 

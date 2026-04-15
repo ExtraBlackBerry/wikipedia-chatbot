@@ -13,7 +13,7 @@ _gemini = None
 def get_gemini():
     global _gemini
     if _gemini is None:
-        _gemini = genai.Client(api_key="AIzaSyCDDkJ1gU5AZXpOkxZrNyiwS21b6EBABqE")
+        _gemini = genai.Client(api_key=gemini_api_key)
     return _gemini
  
 

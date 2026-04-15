@@ -6,11 +6,11 @@ from .pipeline.retrieval_pipeline import retrieve_simple
 
 import sys
 from pathlib import Path
-sys.path.append(str(Path(__file__).parent.parent.parent.parent))
+sys.path.append(str(Path(__file__).parent.parent.parent.parent.parent))
 from config import RETRIEVAL_AGENT_MODEL
 
 #import logging
-from orchestrator_module.util.logger import (
+from agents.orchestrator_module.util.logger import (
     before_agent_callback, before_model_callback, before_tool_callback,
     after_agent_callback, after_model_callback, after_tool_callback
 )

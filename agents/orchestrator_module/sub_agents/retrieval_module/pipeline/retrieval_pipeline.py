@@ -2,9 +2,9 @@ import sys
 from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from db.database import get_conn
-from orchestrator_module.sub_agents.retrieval_module.tools.retrieval_methods import _fts_search, _vector_search
-from orchestrator_module.sub_agents.retrieval_module.tools.reranker import _rerank
-from orchestrator_module.sub_agents.retrieval_module.tools.rrf_fusion import _rrf_fusion
+from agents.orchestrator_module.sub_agents.retrieval_module.tools.retrieval_methods import _fts_search, _vector_search
+from agents.orchestrator_module.sub_agents.retrieval_module.tools.reranker import _rerank
+from agents.orchestrator_module.sub_agents.retrieval_module.tools.rrf_fusion import _rrf_fusion
 
 def retrieve_simple(
     query: str,

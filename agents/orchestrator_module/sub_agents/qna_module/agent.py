@@ -3,7 +3,7 @@ from google.adk.tools import FunctionTool
 
 import sys
 from pathlib import Path
-sys.path.append(str(Path(__file__).parent.parent.parent.parent))
+sys.path.append(str(Path(__file__).parent.parent.parent.parent.parent))
 from config import QNA_AGENT_MODEL
 
 #import tools
@@ -13,7 +13,7 @@ from .tools.qna_table import search_qna_spacy
 from .prompt import QNA_AGENT_DESCRIPTION, QNA_AGENT_INSTRUCTION
 
 #import logging
-from orchestrator_module.util.logger import (
+from agents.orchestrator_module.util.logger import (
     before_agent_callback, before_model_callback, before_tool_callback,
     after_agent_callback, after_model_callback, after_tool_callback
 )

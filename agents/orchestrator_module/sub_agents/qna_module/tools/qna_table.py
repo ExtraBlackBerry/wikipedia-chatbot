@@ -1,6 +1,6 @@
 import spacy, sys
 import pathlib
-sys.path.append(str(pathlib.Path(__file__).parent.parent.parent.parent.parent))
+sys.path.append(str(pathlib.Path(__file__).parent.parent.parent.parent.parent.parent))
 
 from config import QNA_SPACY_MODEL
 from db.database import get_conn as _get_conn
