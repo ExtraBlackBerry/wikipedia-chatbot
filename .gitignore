@@ -41,3 +41,9 @@ Thumbs.db
 
 #adk dumps
 .adk/
+
+#ignore db
+*.db
+
+#docments
+*.md

@@ -1,6 +1,7 @@
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
-DB_PATH    = "db/sqlite/wiki_rag.db"
 EMBED_DIM = 768
 MAX_TOKENS = 512
 BATCH_SIZE = 20

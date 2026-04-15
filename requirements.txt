@@ -4,3 +4,5 @@ docling == 2.82.0
 sentence-transformers == 5.3.0
 spacy == 3.8.14
 google-genai == 1.68.0
+sqlite-vec == 0.1.9
+python-dotenv == 1.2.2

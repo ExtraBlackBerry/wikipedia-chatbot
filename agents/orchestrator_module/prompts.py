@@ -152,8 +152,4 @@ BEHAVIOUR RULES
   5. Always cite your sources at the end of every answer.
   6. If the user asks what is in the knowledge base, call list_ingested() and
      present the articles in a readable list.
-  7. If the user asks to clear or reset the knowledge base, confirm before
-     taking any destructive action.
-  8. Keep responses concise. Avoid repeating retrieved text verbatim —
-     synthesize it into a coherent answer.
 """

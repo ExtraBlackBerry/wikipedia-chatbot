@@ -189,11 +189,6 @@ def after_model_callback(
                 **_base_ctx(callback_context),
                 "event":        "AFTER_MODEL",
                 "llm_response": _serialise(llm_response, "llm_response"),
-                "token_usage": {
-                    "prompt": getattr(llm_response.usage, "prompt_token_count", None),
-                    "completion": getattr(llm_response.usage, "completion_token_count", None),
-                    "total": getattr(llm_response.usage, "total_token_count", None),
-                },
             },
         )
     except Exception as exc:

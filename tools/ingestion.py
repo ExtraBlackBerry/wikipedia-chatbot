@@ -15,10 +15,6 @@ from dataclasses import dataclass
 
 @dataclass
 class InsertedChunk:
-    """
-    Returned by ingest() for every chunk successfully written to the DB.
-    Passed directly to the QnA generator — no DB round-trip needed.
-    """
     chunk_id: int
     title:    str
     section:  str

@@ -9,7 +9,7 @@ from typing import Optional
 # ✏️  CONFIGURE HERE
 # ===========================================================================
 
-ROOT_DIR = Path(__file__).parent.parent.parent
+ROOT_DIR = Path(__file__).parent.parent.parent.parent
 
 LOG_DIR: Path = Path(ROOT_DIR, "logs")        # Directory where log files are written
 DEFAULT_LOG_LEVEL: str = "INFO"         # Global fallback: DEBUG | INFO | WARNING | ERROR

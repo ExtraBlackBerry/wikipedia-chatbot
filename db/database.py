@@ -1,7 +1,9 @@
 import sqlite3, sqlite_vec, sys
 from pathlib import Path
-sys.path.append(str(Path(__file__).parent.parent))
-from config import DB_PATH, EMBED_DIM
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+from config import EMBED_DIM
+
+DB_PATH = Path(__file__).resolve().parent / "sqlite" / "wiki_rag.db"
 
 def get_conn() -> sqlite3.Connection:
     conn = sqlite3.connect(DB_PATH)
